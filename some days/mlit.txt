@@ -1,0 +1,307 @@
+date: 13/09/2022
+Machine learning                                                    | mongoDB,oracle,MySQL(DBMS)
+Data analysis
+Data science                                                  
+Artificial Inteligence-------Alexa,etc.
+Big data-----3V----- 1. Volume 2. Varity 3. Velocity
+Cloud Computing
+Deep learning
+
+--------------------
+
+Types of data:
+1. Structured Data
+2. Unstructured Data
+
+-------------------------------
+error handeling: try and except
+-------------------------------
+Python libraries:
+1. Data MAnupulation: ---> Numpy,Panda
+2. Data Visualization-----> MAtplotlib,seaborn,plotly
+3. Machine learning-------> scikit-learn,sk-learn
+4. Deep learning ---------> tensorflow, Keras, Pytorch
+-------------------------------------------------------
+Python is used for:
+Web development: Django,Flask,Web2py,Bottle,Tornado
+Graphical User Interfaces: kivy,pyqt,tkinter,pygui,etc
+OS development
+Multimedia programming: Pymedia,GStreamer,Pygame,Pyglet
+Database programming : supporting connectors for all databases
+Automation: ANN,IOT,MicroPython,Embedded System
+Web Scraping: Beautiful Soup,Scrapy,Requests,Selenium(extracting data using programming)
+
+Different application areas:
+Scientific Computing:Astrophy,Biopython,etc
+Text processing:NLTK,etc
+Image processing: opencv,pillow
+Machine learning: scikit-learn,TensorFlow,Keras
+Data Analysis: Numpy,Pandas, Matplotlib , Seaborn
+Data Science: ML,DA,Keras
+
+timeline-->
+Python,s very first version was launched in 1993
+currently we are using python version 3 which was launched in 2008
+
+Include Python installation process in IT ppt
+
+* id function is used to find id of an variable
+-----------------------------------------------------------
+
+date: 14/09/2022
+Rules of variables:
+1. no variable can be started by a number or space or any special character(ex. 1a,1b is not possible)
+2. there can not be space in between name of a variable(ex. name 2 is not possible)
+3. you can use numbers in between name of variables(like a1,b1,a12,etc..)
+4. you can not use special charcter in naming a variable(except '_')(ex. @,%,&,$ are special charcter and they can't be used )("_=200 is possible")
+5. can't use keyword(example for,in,int,etc...)
+
+------------------------------------------------------------
+Python operators:(there are total 7 operators in python)
+1.arithmatic operator (+,-,*,/,//,**,%)
+2.Comparison/Relational Operator (<,>,==,>=,<=,!=)
+3.Assignment operator (=,+=,-=,*=,/=,//=)
+4. Bitwise (&,|,^,>>,<<)
+5. Logical Operator (and , or , not) 
+6. Identity operator (is, is not)
+7. membership operator (in , not in)
+---------------------------------------------------------------
+types is brackets in python
+():-> fuction, expression, tupple(tupple is immutable)
+[]:-> list,indexing,slicing
+{}:-> set,Dictonary
+<>:-> No Use
+
+--------------------------------------------------------------
+
+data types:
+
+1. numeric(integer, complex number, float)(int a=5, float b=5.5, complex = 3+5j(here in python iota is represented by j))
+2. dictonary
+3. Boolean
+4. Set(it prints single values for each value)
+5. Sequence Type( string, list , tupple)(string---str---a='hello'/"hello"/'''hello''')
+----list---a=[1,2,3,'hello',2+6j,5.90](we can here store hetrogeneous data too the drawback if array was overcomed here)
+----tupple---t=(3,3.6,'hi')(it is just like list but it is immutable)
+----set----s={1,2,3,'hi'}(it dont take repetetive value it will only print every and each value once)
+-----bool---it provides values of true and false
+-----dictionary--- dict{key:value}
+
+---------------------------------------------------------------
+we can use type function to find type of any variable
+we can typecast variable for once by giving them data type-> a=5(int) we can type cast by float(a) now a=5.0 which is float value
+--------------------------------------------------------------------------------------------------------------------------------------
+date: 15/09/2022
+STRING:
+1. indexing from left starts from 0 and from right it starts from -1
+2. we can do slicing of any string or list/tupple/set by using ([n:m:inc]) square brackets(inc means increment in string by default it is 1)(by deafult n is 0 and m is end of string)
+3. spaces also have a value in python
+4. when we move from left to right we call it positive indexing it starts from 0
+5. when we move from right to left we call it negetive indexing it strats from -1
+
+string buildin functions:
+1. capitalize()---(syntax(str_name.capitalize()))
+2. to capitalize every first letter every word use "title"   ----   syntax(str_name.title())
+3. to print string in center use function center syntax(str_name.ceter(number of space to be adjusted, we can put any thing here to replace with space))
+4. to count number of letter in string use count( syntax--- str_name.count('letter'))
+5. we can use strip function to strip space from both sides:
+	i) we can also use lstrip() to strip space from left
+	ii) we can also use rstrip() to strip space from right
+6. to check string is in upper or lower case---  str_name.isupper/lower
+7. to convert the string in upper or lower use --- str_name.upper/lower
+8. we can check string and ending of string using startswith('letter') and endswith('letter') functions
+9. we can find length of string using len function as len(str_name)
+10. we can use split function to split the string using str_name.split('letter')
+11. we can join the string using join function as 'letter'.join(str_name)
+---------------------------------------------------------------------------------------------------
+LIST:
+1.[]
+2. we can also store hetrogeneous data
+3. it is mutable
+4. we can apply indexing as well as slicing in list
+5. most of the built in finctions in list are same as string
+6. we can use membershipt operators such as in and not in in lists as (element in list_name)/(element not in m)
+7. we can add new value in list by using assignment operators as += and append function (list_name.append())
+8. to insert more than 1 value in list we can use extend function syntax list_name.extand([elements])
+9. to insert elements in between we can use insert function syntax -- list_name.insert(position,element)
+10. we can use pop function to delete an element from list syntax-- list_name.pop(position)   (it removes the last element from list and print it but,
+	 if we provide index of element it will pop element on that position), we can also use remove function as .remove(element)
+11. we can clear the list by using list_name.clear() function
+12. we can reverse the list using list_name.reverse() function
+13. we can sort the list using list_name.sort() function it will sort in ascending manner
+14. we can use index function to find position of element in list syntax list_name.index(element)
+15. we can use max and min function to find max and min value of list syntax max(list_name)/min(list_name) 
+we can declare an empty list by ex: a=list() or a=[]
+------------------------------------------------------------------------------------------------------
+TUPPLE:
+1. ()
+2. immutable
+3. we can also write a tupple without () then it will be known as comma seperated values.
+4. it can store hetrogeneous data
+5. as same as in list and string it too have same type of built-in functions .we can only use immutable functions in tupple
+6. we can add elements in tupple using tupple concatanation
+------------------------------------------------------------------------------------------------------
+SET:
+1. {}
+2. set is unorderd thus we can't use indexing or slicing on set.
+3. unique collection(it dont take repetetive value it will only print every and each value once)
+4 to find common 2 sets we can use intersection function as set_name.intersection(set_name2)
+5. to add 2 sets we can use union function as set_name.union(set_name2)
+6. to add or delete we can use functions as .add(element) and .discard(element) and we can use .pop() and .remove(element)
+--------------------------------------------------------------------------------------------------------
+date: 16/09/2022
+DICTIONARY:
+1. we use {}(curly braces) to define a dictionary
+2. dictionary is a key value pair.
+3. we cant't use indexing and slicing in ditionary
+4. we can access value using key syntax--> dict_name[key]
+5. you can find keys using keys function syntax  ---> dict_name.keys()
+6. we can also find values by using values function syntax ----> dict_name.values()
+7. we can use items funtion to find all the items in dictionary ----> dict_name.items()
+8. to add more keys or information in dictionary we can directly pur new key name in square brackets and then equate it to the value list example: dict_name[key]=value
+9. we can use del keyword to delete an key from dictionary.
+10. to add element in values we can use insert function. syntax---> dict_name[key].insert(position,element) 
+11. we can use get funtion too to get value of key never getting any error. syntax----> dict_name.get(key)
+12. we can use pop function in dictionary.
+we can add elements in value by :--> dict_name['key']+=[element]. and also we can use insert function to insert values in values of dictionarys
+we can change name of key by 
+---------------------------------------------------------------------
+PRINT:
+we can use print fucntion to print values 
+we can also print 2 values by usnig (,) comma
+we can change seperation by giving value to sep as ---> print(a,b,sep='    ')
+we can also change the end attribute of print by giving end a value as ---> print(a,b,end='') #[here also \t means tab space and \n means new line.]
+-----------------------------------------------------------------------
+1. conitional statement (if,elif,else(suites/indentation))
+2. looping (for,while)
+3. exceptional handeling  (try,except)
+----------------------------------------------
+IF:
+if condition:
+	(use tab indentation) arguments
+elif condition:
+	same
+else:
+	same
+in ladder we use many if statements again
+in nested we use if statement inside another if statements
+
+--------------------------------------------------------
+RANGE:
+range(s):
+it slice the data into given amount
+syntax ----> range(start,end+1,step) (including, excluding(n+1))
+		by default : start: 0
+			     : step: 1
+
+list(range(2,101,2)) to print values in list from 0 till 100 all even numbers
+-----------------------------------------------------------------------------------
+date: 17/09/2022
+F-String/String Format:
+
+we can use it to print a statement with different strings in between as
+f'argument {var.} argument2 {var.}'
+
+we can also do it by using format function:
+'arugument {} welcome {}'.format('name','another name')
+-----------------------------------------------------------
+LOOP:
+1. while()
+2. for()
+
+FOR():
+syntax:  for i in range(var.):
+	   for i in [list]
+	   for i in range(start,excluding,steps):
+	   for i in string:
+
+home task(t=[2,5,8,6,8,10,16] isko only first 4 value ko power karna hai )(done in class)
+
+WHILE:
+syntax: while(condition):
+--------------------------------
+continue and break 
+continue is use to skip a elemnet
+and break is use to exit from loop
+we can also use exit to exit from program
+there is one more thing known as pass : when we dont have to do nothing in one condition or in any case we can use pass.
+
+---------------------------------------
+FUNCTION:
+
+1. NO i/p NO o/p (means no input no output)
+2. NO i/p with o/p
+3. i/p NO o/p
+4. i/p with o/p
+
+1. taking multiple input
+2. returning multiple output
+3. keyword argument
+4. default values
+5. *args
+6. **kwargs
+-------------------------------------------
+date: 19/09/2022
+
+to return vale using a function we can use return keyword:
+	return 'abc'
+or
+	return var
+
+you can write as much line you want in an function
+
+we can give and return multiple inputs and outputs using a function.
+
+#KEYWORD ARGUMENTS
+by this we can assign aruments to parametes using keywords as:
+	
+def six(x,y,z):
+    return x+y+z
+print(six(x=3,y=4,z=1))
+
+we can aslo set by default values in parameters. this is known as default argument or values
+but there are few rules in this:
+we can only make arguments from right to left setting them as defualt we can make any element in between as default it will give an error.
+
+---------------------------------------------------------------
+*ARGS:
+*args means argument in tupple (syntax: in parameters *x)
+and *kwargs means keyword argument in dictionary   (syntax: in parameters **x)
+with the help of *args we can give input of tupple
+with help of *kwargs we can give input of dictionary
+
+------------------------------------------------------------
+LAMBDA(lambda):
+it is also known as anonymus function it act as one line or linear function.
+ex:
+myadd=lambda x,y,z: x+y+z
+print(myadd(5,9,7))
+
+-------------------------------------------------------
+MODULES,PACKAGES and LIBRARIES:
+module: module is nothing but .py file all small small packets of python files including different data and functions is knows as modules.
+ex. OS,Math
+packages: packages it is a collection of modules. ex. __init__.py(it is a package.)
+libraries: it is nothing but different collection of packages which we includes as per our use with keyword import. ex. numpy,pandas,mediapipe,etc.
+we can download many different packages from pypi.org
+
+----------------------------------------------------------
+we can use different function from libraray like:
+import math
+math.function(_)
+ex. math.pow(2,2)
+output 4
+we can also find sqrl and factorial and many more like this.
+we can also create alias of library by using as keyword
+ex. import math as m
+we can also import onlt single this as
+from math import sqrt
+sqrt(81)=9.0
+we can aslo find date by using datetime module 
+as import datetime as dt
+dt.date.today()
+=> 2022-09-19
+we can also print calendar by importing calendar and using calendar.calendar(year)
+we can also define month as calendar.month(2022,9)(year,month(number))
+---------------------------------------------------------------------
+
