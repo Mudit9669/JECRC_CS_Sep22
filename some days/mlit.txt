@@ -1,5 +1,5 @@
 date: 13/09/2022
-Machine learning                                                    | mongoDB,oracle,MySQL(DBMS)
+Machine learning                                                    | mongoDB,oracle,MySQL(DBMS) #new command
 Data analysis
 Data science                                                  
 Artificial Inteligence-------Alexa,etc.
