@@ -22,7 +22,7 @@ def abc():
 ttk.Button(app, text='Isko Click Kardo', command = abc, font=('Arial')).place(x=100,y=100)
 ttk.Button(app, text='ye wala bhi hai', command= lambda : msg.set('pata nahi'), font=('Arial')).place(x=100,y=130)
 f1=ttk.Variable(app)
-#f1.set('0')
+#f1.set('0') 
 f2=ttk.Variable(app)
 #f2.set('0')
 

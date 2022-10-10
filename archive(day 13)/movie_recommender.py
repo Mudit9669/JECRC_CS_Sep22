@@ -7,7 +7,7 @@ def movie_recommend(movie_selected='Star Wars (1977)'):
     item_cols = ['movie_id','title']+ [str(i) for i in range(22)]
     df1=pd.read_csv('u.item', sep='|', encoding = "ISO-8859-1", names=item_cols)[['movie_id','title']]
     #merge
-    movie=pd.merge(df,df1,on='movie_id')
+    movie=pd.merge(df,df1,on='movie_id') 
     #movie_pivot
     movie_pivot=movie.pivot_table(index='user_id',columns='title', values='rating')
     #find similarities for selected movie

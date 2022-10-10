@@ -5,7 +5,7 @@ import warnings
 warnings.filterwarnings('ignore')
 app=ttk.Tk()
 app.geometry('1080x1080')
-app.title('movie recommender')
+app.title('movie recommender') 
 #ttk.Label(app, text='enter the movie that you have watched: ').place(x=15,y=15)
 result=ttk.Variable(app)
 box=ttk.Listbox(app, height=10)
