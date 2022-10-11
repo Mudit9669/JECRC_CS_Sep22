@@ -28,11 +28,9 @@ def get_movie():
     corrs_df['count']=movie['title'].value_counts()
     #find top 2-3 recommendations
     top_recom=list(corrs_df[corrs_df['count']>50].sort_values(by='correlation', ascending=False).head(3).index)
-    #important top_recom.remove(movie_selected)
-    if movie_selected in top_recom:
-        top_recom.remove(movie_selected)
+    #top_recom.remove(movie_selected)
     print(top_recom)
-    result.set(top_recom[0])    
+    result.set(top_recom[1])    
     
 
 for title in movie['title'].unique():
