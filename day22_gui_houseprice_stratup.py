@@ -1,5 +1,4 @@
 import tkinter as ttk
-from turtle import color
 import pandas as pd
 
 model = pd.read_pickle('houseprice.pickle')
